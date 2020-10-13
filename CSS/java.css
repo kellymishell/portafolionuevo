@@ -1,0 +1,250 @@
+
+.principal{
+    width: 100%;
+    height: 60px;
+    background-color: #ffff;
+}
+body{
+    background-color:antiquewhite;
+}
+header {
+  width: 100%;
+  height: 80px;
+    background-color: bisque;
+}.logo {
+  width: 50px;
+  margin-top: 5px;
+  margin-left: 50px;
+  float: left;
+}
+.logoResponsive {
+  width: 50px;
+  margin-top: 5px;
+  float: right;
+  display: none;
+}
+.nav {
+  width: 500px;
+  float: left;
+  margin-left: 250px;
+  list-style: none;
+  margin-top: 12px;
+}
+
+.bt {
+  float:left;
+ margin-right: 105px;
+  padding: 10px;
+  background: ;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.bt:hover {
+  color: #ffffff;
+  background-color:#db36a4 ;
+}
+.mas {
+  display: flex;
+  flex-direction: column;
+}
+.bt4 {
+}
+.botones4 {
+  list-style: none;
+ display:none;
+}
+.mostrar {
+  display: block;
+}
+.mas:hover {
+  background-color: #db36a4;
+}
+.botones4 a {
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+    
+   
+}
+
+.botones4 a li {
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  color: #ffffff;
+
+  
+}
+.botones4 a li:hover {
+  background-color:bisque;
+}
+
+/*SECCION DEL MENU RESPONSIVE*/
+.cajaDeIconosResponsive {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#iconoMenuResposive {
+  width: 35px;
+  margin-top: 10px;
+  float: left;
+  display: none;
+  margin-left: 10px;
+}
+#iconoMenuCerrar {
+  width: 25px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 10px;
+}
+.none {
+  display: none;
+}
+.cajaDeIconosResponsive {
+  display: none;
+}
+section{
+  display: flex;
+  font-size: 14px;
+}
+.uno{
+  height: 400px;/*alto */
+  width: 480px;/* ancho*/
+
+  margin-top: 20px;/* m hacia arriba*/
+  margin-left: 15px;/* m hacia la izquiera*/
+  border: #EDEDED 2px solid;
+      border-radius: 10px;
+      overflow: hidden;/* no mostrar*/
+      position: relative;
+      cursor: pointer;/*que muestre un aamno en el cursor*/
+}.uno img{
+  width: 480px;/* ancho*/
+  height: 410px;/*alto */
+}.uno:hover img{
+  transform: scale(1.2) rotate(10deg);/* PARA QUE ROTE LA IMAGEN Y SE ACERQUE*/
+}.uno h1{
+  position: absolute;/*que se quede fija*/
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  left: 50%;
+  z-index: 1;/*ordenar los elementos que se superpongan entre */
+  color:white;/*color*/
+  font-size: 25px;/*tamaño de letra*/
+}.uno:hover h1{
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 400MS;/*controla tiempo de animacions*/
+}.uno:before,
+.uno:after{
+  content:   '' ;
+  width: 2800PX;/* ancho*/
+  height: 200PX;/*alto */
+  position: absolute;/*que se quede fija*/
+  top: 0PX;
+  left: 0PX;
+opacity: 0.3; /*define el grado de no transparencia*/
+transition:  all 400ms/*controla tiempo de animacions*/
+}/* PARA CREAR LA VENTANA */
+.dos{
+  height: 400px;/*alto */
+  width: 480px;/* ancho*/
+
+  margin-top: 20px;/* m hacia arriba*/
+  margin-left: 15px;/* m hacia la izquiera*/
+  border: #EDEDED 2px solid;
+      border-radius: 10px;
+      overflow: hidden;/* no mostrar*/
+      position: relative;
+      cursor: pointer;/*que muestre un aamno en el cursor*/
+}.dos img{
+  width: 480px;/* ancho*/
+  height: 410px;/*alto */
+}.dos:hover img{
+  transform: scale(1.2) rotate(10deg);/* PARA QUE ROTE LA IMAGEN Y SE ACERQUE*/
+}.dos h1{
+  position: absolute;/*que se quede fija*/
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  left: 50%;
+  z-index: 1;/*ordenar los elementos que se superpongan entre */
+  color:white;/*color*/
+  font-size: 25px;/*tamaño de letra*/
+}.dos:hover h1{
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 400MS;/*controla tiempo de animacions*/
+}.dos:before,
+.dos:after{
+  content:   '' ;
+  width: 2800PX;/* ancho*/
+  height: 200PX;/*alto */
+  position: absolute;/*que se quede fija*/
+  top: 0PX;
+  left: 0PX;
+opacity: 0.3; /*define el grado de no transparencia*/
+transition:  all 400ms/*controla tiempo de animacions*/
+}/* PARA CREAR LA VENTANA */
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .cajaDeIconosResponsive {
+    display: block;
+  }
+    .principal {
+        display: none;
+    }
+  
+  .logo {
+    display: none;
+  }
+  .logoResponsive {
+    display: block;
+    float: right;
+  }
+  nav {
+    float: left;
+  }
+  .activarNav {
+    background-color: #16a085;
+    width: 80%;
+    height: 1000px;
+  }
+
+  .nav {
+    float: none;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .activarBotones {
+    display: block;
+  }
+  .bt {
+    display: block;
+    float: none;
+    margin-right: 0px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #iconoMenuResposive {
+    display: block;
+    float: left;
+    }.section{
+       
+        display: block;
+    }}
+ 
